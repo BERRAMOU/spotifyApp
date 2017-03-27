@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<div id="app">
+    <!--{{title}}-->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" [routerLink] ="['/']" >Quotes</a> |
+                <a href="#" [routerLink] ="['/new-quote']" >Add a new Quote</a>|
+                <a href="#" [routerLink] ="['/signup']" >Signup</a> |
+                <a href="#" [routerLink] ="['/signin']" >Signin</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <router-outlet>
+                </router-outlet>
+            </div>
+        </div>
+
+    </div>
+</div>
